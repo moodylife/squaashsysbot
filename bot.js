@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
- client.user.setGame('~Squáaash ., 🍇 ','https://www.twitch.tv/peery13');
+ client.user.setGame('~Squáaash .,🍇..'https://www.twitch.tv/peery13');
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -31,7 +31,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.bot) return;
-    var prefix ="&"
+    var prefix ="s!"
      if (message.content === prefix + "help") {
 		 message.channel.send('**تم ارسال رسالة في الخاص**');
 
@@ -39,94 +39,54 @@ client.on('message', message => {
 
 
  message.author.sendMessage(`
-
-
 ╔[❖════════════❖]╗
-  **استخدم (%) **
+  **استخدم (s!) **
 ╚[❖════════════❖]╝
-
 ╔[❖════════════❖]╗
              اومر عادية
 ╚[❖════════════❖]╝
 **
 ❖ bans ➾ لي معرف مين بالع بان
-
 ❖ coins ➾  لي معرفة الكوين
-
 ❖ sg ➾ لي البحث في جوجل
-
 ❖ topinvites  ➾ لي عرض من اكثر في الدعوات
-
 ❖ report  ➾ للابلاغ عن شخص ما
-
 ❖ skin ➾ لي عرض سكن ماين كرافت                 
-
 ❖ count  ➾ لي معرفة عدد الأعضاء في السيرفر
-
 ❖ embed  ➾ يحط لك الكلام في مربع
-
 ❖ allbots  ➾ لي اظهار جميع البوتات
-
 ❖ level ➾ لي معرفه كم ليفلك
-
 ❖ gif  ➾ لي عرض gif
-
 ❖ id ➾ لي عرض معلومات عن حسابك
-
 ❖ avatar ➾ لي عرض صورتك او اي شخص تمنشن
-
 ❖ emoji ➾ليكي البوت يرسل نفس الاموجي نفس الاموجي الي ارسلته
-
 ❖ tag  ➾ لي الزغرفة
-
 ❖ bot  ➾ لي عرض معلومات البوت
-
 ❖ cal ➾ آلة حاسبة
-
 ❖ server ➾ عرض معلومات السيرفر
-
 ❖ invite ➾ لي اضفت البوت الي سيرفرك
-
 ❖ invites ➾ لي عرض كم دعوة انت جبت
-
 ╔[❖════════════❖]╗
             اومر ادمن
 ╚[❖════════════❖]╝
-
 ❖ kick <mention > ➾  kickلي اعطاء شخص
-
 ❖ setvoice  لي انشاء روم فويس اونلاين
-
 ❖ say  ➾ يكرر الكلام الذي تقولة
-
 ❖ ban <mention> ➾ لي اعطاء شخص بان
-
 ❖ unban <mention> ➾ لي فك بان عن شخص
-
 ❖ clear ➾ لي مسح الشات
-
 ❖ mute <mention> ➾ لي اعطاء ميوت لي شخص
-
 ❖ ct <name> ➾ لي انشاء روم كتبي
-
 ❖ cv <name> ➾لي انشاء روم صوتي
-
 ❖ bc <message>  ➾ لي ارسال رسالة لي كل الاعضاء
-
 ╔[❖════════════❖]   ╗
             اومر العاب
 ╚[❖════════════❖]╝
-
-❖ %rps ➾ لعبة حجرة ورقة مقص
-
-❖ %marry ➾ لعبة التزوج
-
-❖ %لعبة لوخيروك ➾ لوخيروك
-
+❖ s!rps ➾ لعبة حجرة ورقة مقص
+❖ s!marry ➾ لعبة التزوج
+❖ s!لعبة لوخيروك ➾ لوخيروك
 ==================================================================
-
 bot invite link: https://discordapp.com/api/oauth2/authorize?client_id=485760757141864460&permissions=8&scope=bot 
-
 ==================================================================
 **
 `);
@@ -673,7 +633,6 @@ Choose one of the following.
 #2 ( Paper )
 #3 ( Scissors )
 \`\`\`
-
 __امامك  5 توان للاختيار__`)
 .then(() => {
   message.channel.awaitMessages(response => response.content === '1', {
@@ -1058,7 +1017,7 @@ const secre = [
 client.login(process.env.BOT_TOKEN); 
 client.on("message", message => {
 if(message.content === ".") {
-message.channel.send("**Welcome To Squáash Server Have Fun :wine_glass:...:champagne_glass: **");
+message.channel.send("**Welcome To Squáash Server Have Fun :wine_glass:...:champagne_glass:  **");
 }
 });
 
@@ -1083,11 +1042,11 @@ client.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
     });
 client.on("message", msg => {
-var prefix = "&";
+var prefix = "s!";
 let args = msg.content.split(" ").slice(2);
 let men = msg.mentions.users.first();
 var all = msg.content.split(" ").slice(1) - msg.mentions.users.first();
-if(msg.content.startsWith("&" + "msg")) {
+if(msg.content.startsWith("s!" + "msg")) {
 msg.delete(1500);
 msg.channel.send(`تم الارساله الى ${men}`).then(msgS => {
 msgS.delete(1500);
@@ -1107,5 +1066,3 @@ client.on ("guildMemberAdd", member => {
    member.addRole (role);
 
 })
-
- 
