@@ -1058,7 +1058,7 @@ const secre = [
 client.login(process.env.BOT_TOKEN); 
 client.on("message", message => {
 if(message.content === ".") {
-message.channel.send("**Welcome To .Prestige ™...:champagne_glass: **");
+message.channel.send("**Welcome To Squáash Server Have Fun :wine_glass:...:champagne_glass: **");
 }
 });
 
